@@ -1,0 +1,11 @@
+mesh_converter:
+  meshType: "obj"               # obj[Recommend] or stl
+  loadMeshDirectory: "/catkin_ws_phd/src/pathplanninginradiationfield/meshes/sf03/version_3/"
+  meshName: sf03
+  savePCDDirectory: "/catkin_ws_phd/src/pathplanninginradiationfield/meshes/sf03/version_3/"
+  
+  number_samples: 1000000       # the number of point
+  leaf_size: 0.01               # Voxel Grid Size
+  write_normals: false
+
+  enableVisual: false

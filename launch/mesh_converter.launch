@@ -1,0 +1,10 @@
+<launch>
+    <arg name="project" default="pathplanninginradiationfield"/>
+    
+    <!-- Parameters -->
+    <rosparam file="$(find pathplanninginradiationfield)/config/converter_params.yaml" command="load" />
+
+    <!--- LOAM -->
+    <node pkg="$(arg project)" type="$(arg project)_mesh_conversion"   name="$(arg project)_mesh_conversion"    output="screen"/>
+
+</launch>
